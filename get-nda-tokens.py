@@ -13,7 +13,6 @@
 from nda_aws_token_generator import *
 import getpass
 import os
-import subprocess
 from configparser import ConfigParser
 
 # -----------------------------------------------------------------------------------------------------------------------
