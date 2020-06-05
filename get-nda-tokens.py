@@ -2,7 +2,7 @@
 # coding: utf-8
 
 # =======================================================================================================================
-# GENERATING NDA TOKENS for DOWNLOADING DATA from HCPD REPOSITORY
+# GENERATE NDA TOKENS for DOWNLOADING DATA from HCPD REPOSITORY
 # Written by Taylor J. Keding (tjkeding@gmail.com)
 # Last Updated: 06.04.20
 # =======================================================================================================================
@@ -22,18 +22,10 @@ from configparser import ConfigParser
 def getSignInCreds():
 
     # Prompt user for username and save
-    try:
-        userName = getpass.getuser("User Name: ")
-    except:
-        print("Incorrect username.")
-        sys.exit()
+    userName = str(input("User Name: "))
 
     # Prompt user for password and save
-    try:
-        passWord = getpass.getpass("Password: ")
-    except:
-        print("Incorrect password.")
-        sys.exit()
+    passWord = getpass.getpass(prompt="Password: ",stream=None)
 
     return [userName,passWord]
 
