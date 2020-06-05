@@ -25,7 +25,7 @@ def getSignInCreds():
     try:
         userName = getpass.getuser("User Name: ")
     except:
-        print("Incorrect username."")
+        print("Incorrect username.")
         sys.exit()
 
     # Prompt user for password and save
